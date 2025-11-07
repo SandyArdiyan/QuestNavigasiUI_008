@@ -93,3 +93,21 @@ fun FormIsian(
                 thickness = dimensionResource(R.dimen.thickness_divider),
                 color = Color.Red
             )
+            OutlinedTextField(
+                value = "",
+                singleLine = true,
+                modifier = Modifier
+                    .width(width = 250.dp),
+                label = { Text(text = "Alamat") },
+                onValueChange = {},
+            )
+            Spacer(modifier = Modifier.height(height = 30.dp))
+            Button(
+                modifier = Modifier.fillMaxWidth(fraction = 1f)
+                    .padding(all = 25.dp),
+                onClick = OnSubmitBtnClick
+            ) {
+            }
+        }
+    }
+    }
