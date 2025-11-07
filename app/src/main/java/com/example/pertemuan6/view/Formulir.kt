@@ -57,3 +57,21 @@ fun FormIsian(
             verticalArrangement = Arrangement.Top,
             horizontalAlignment = Alignment.CenterHorizontally
         ) {
+            OutlinedTextField(
+                value = nama,
+                singleLine = true,
+                modifier = Modifier
+                    .padding(top = dimensionResource(R.dimen.padding_medium))
+                    .width(width = 250.dp),
+                label = { Text(text = stringResource(R.string.nama_lengkap)) },
+                onValueChange = { nama = it },
+            )
+
+            HorizontalDivider(
+                modifier = Modifier
+                    .padding(all = dimensionResource(R.dimen.padding_medium))
+                    .width(width = 250.dp),
+                thickness = dimensionResource(R.dimen.thickness_divider),
+                color = Color.Red
+            )
+
